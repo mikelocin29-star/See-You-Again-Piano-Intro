@@ -93,7 +93,9 @@
   </style>
 </head>
 <body>
+  <div id="nav-placeholder"></div>
 
+  
   <h1>See You Again - Piano Intro</h1>
   <p>Use your computer keyboard numbers (1 to 0) to play along with the numbers below!</p>
 
@@ -171,5 +173,13 @@
     });
   </script>
 
+  <script>
+  // Automatically loads navbar.html into the placeholder above
+  fetch('navbar.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('nav-placeholder').innerHTML = data;
+    });
+</script>
 </body>
 </html>
