@@ -19,19 +19,16 @@
       padding: 20px;
     }
 
-    /* Navigation Bar Styles */
-    .navbar {
-      display: flex;
-      gap: 20px;
+    /* Simple Song List Link Style */
+    .song-list-link {
       margin-bottom: 25px;
       background: #111;
       padding: 10px 20px;
       border-radius: 6px;
       box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-      align-items: center;
     }
 
-    .navbar a {
+    .song-list-link a {
       color: #fff;
       text-decoration: none;
       font-weight: bold;
@@ -39,63 +36,8 @@
       transition: color 0.2s;
     }
 
-    .navbar a:hover {
+    .song-list-link a:hover {
       color: #4CAF50;
-    }
-
-    /* Dropdown Container Styles */
-    .dropdown {
-      position: relative;
-      display: inline-block;
-    }
-
-    .dropbtn {
-      background: none;
-      border: none;
-      color: #fff;
-      font-weight: bold;
-      font-size: 14px;
-      cursor: pointer;
-      padding: 0;
-      font-family: Arial, sans-serif;
-      transition: color 0.2s;
-    }
-
-    .dropdown:hover .dropbtn {
-      color: #4CAF50;
-    }
-
-    /* Dropdown Content with Scrolling */
-    .dropdown-content {
-      display: none;
-      position: absolute;
-      background-color: #1a1a1a;
-      min-width: 250px;
-      max-height: 250px; 
-      overflow-y: auto;  
-      box-shadow: 0px 8px 16px rgba(0,0,0,0.4);
-      z-index: 10;
-      border-radius: 4px;
-      top: 100%;
-      left: 0;
-      padding: 8px 0;
-    }
-
-    .dropdown-content a {
-      color: #fff;
-      padding: 10px 16px;
-      text-decoration: none;
-      display: block;
-      font-size: 13px;
-    }
-
-    .dropdown-content a:hover {
-      background-color: #333;
-      color: #4CAF50;
-    }
-
-    .dropdown:hover .dropdown-content {
-      display: block;
     }
 
     h1 {
@@ -177,25 +119,10 @@
 </head>
 <body>
 
-  <!-- EMBEDDED NAVIGATION BAR WITH SCROLLING DROPDOWN -->
-  <nav class="navbar">
-    <a href="index.html">Home / Piano</a>
-    
-    <div class="dropdown">
-      <button class="dropbtn">Song Library ▾</button>
-      <div class="dropdown-content">
-        <a href="https://mikelocin29-star.github.io/See-You-Again-Piano-Intro/">See You Again (Intro)</a>
-        <a href="https://mikelocin29-star.github.io/See-You-Again-Chorus/">See You Again (Chorus)</a>
-        <a href="https://mikelocin29-star.github.io/My-Favortite-Things-Verse/">My Favorite Things (Verse)</a>
-        <a href="https://mikelocin29-star.github.io/My-Favortite-Things-Chorus/">My Favorite Things (Chorus)</a>
-        <a href="https://mikelocin29-star.github.io/Happy-Birthday-To-You/">Happy Birthday To You</a>
-        <a href="https://mikelocin29-star.github.io/If-you-re-happy-and-you-know-it/">If you're happy and you know it</a>
-      </div>
-    </div>
-
-    <a href="chords.html">Chord Guide</a>
-    <a href="about.html">About</a>
-  </nav>
+  <!-- EMBEDDED ABSOLUTE LINK TO SONG LIBRARY -->
+  <div class="song-list-link">
+    <a href="https://mikelocin29-star.github.io/Ms-Kim-s-Online-Keyboard/">← Back to Song Library</a>
+  </div>
 
   <h1>Online Piano (C4 - G5)</h1>
   <p>White keys: <b>1 to =</b> | Black keys: <b>Q,W | R,T,Y | I,O | [</b> (or click with your mouse!)</p>
